@@ -61,62 +61,76 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         TextView txtView = (TextView) findViewById(R.id.textView3);
         TextView result = findViewById(R.id.textView4);
-        txtView.setText(this.txt);
         switch (v.getId()) {
             case R.id.button1:
                 this.txt += "1";
+                txtView.setText(this.txt);
                 break;
             case R.id.button2:
                 this.txt += "2";
+                txtView.setText(this.txt);
                 break;
             case R.id.button3:
                 this.txt += "3";
+                txtView.setText(this.txt);
                 break;
             case R.id.button4:
                 this.txt += "4";
+                txtView.setText(this.txt);
                 break;
             case R.id.button5:
                 this.txt += "5";
+                txtView.setText(this.txt);
                 break;
             case R.id.button6:
                 this.txt += "6";
+                txtView.setText(this.txt);
                 break;
             case R.id.button7:
                 this.txt += "7";
+                txtView.setText(this.txt);
                 break;
             case R.id.button8:
                 this.txt += "8";
+                txtView.setText(this.txt);
                 break;
             case R.id.button9:
                 this.txt += "9";
+                txtView.setText(this.txt);
                 break;
             case R.id.button0:
                 this.txt += "0";
+                txtView.setText(this.txt);
                 break;
             case R.id.addition:
                 this.txt += "+";
+                txtView.setText(this.txt);
                 break;
             case R.id.percent:
                 this.txt += "%";
+                txtView.setText(this.txt);
                 break;
             case R.id.produit:
                 this.txt += "*";
+                txtView.setText(this.txt);
                 break;
             case R.id.div:
                 this.txt += "/";
+                txtView.setText(this.txt);
                 break;
             case R.id.sous:
                 this.txt += "-";
                 txtView.setText(this.txt);
                 break;
             case R.id.cleanALL:
+                txtView.setText("");
                 this.txt = "";
-                txtView.setText(this.txt);
             case R.id.egale:
                 Expression exp = new ExpressionBuilder(txt).build();
                 result.setText(Double.toString(exp.evaluate()));
                 txtView.setText(this.txt);
                 break;
+
         }
 
 
